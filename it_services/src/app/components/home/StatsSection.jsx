@@ -43,9 +43,9 @@ export default function StatsSection() {
           BACKGROUND GLOWS
           ===================================================== */}
 
-      <div className="pointer-events-none absolute left-1/4 top-0 h-72 w-72 rounded-full bg-cyan-500/[0.06] blur-[130px]" />
+      <div className="pointer-events-none absolute left-1/4 top-0 h-72 w-72 rounded-full bg-cyan-500/6 blur-[130px]" />
 
-      <div className="pointer-events-none absolute bottom-0 right-1/4 h-72 w-72 rounded-full bg-blue-500/[0.06] blur-[130px]" />
+      <div className="pointer-events-none absolute bottom-0 right-1/4 h-72 w-72 rounded-full bg-blue-500/6 blur-[130px]" />
 
       {/* =====================================================
           MAIN CONTAINER
@@ -63,7 +63,7 @@ export default function StatsSection() {
           transition={{ duration: 0.7 }}
           className="mx-auto mb-12 max-w-2xl text-center sm:mb-16"
         >
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-4 py-2">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/6 px-4 py-2">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)]" />
 
             <span className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-300">
@@ -73,7 +73,7 @@ export default function StatsSection() {
 
           <h2 className="text-3xl font-bold tracking-[-0.03em] sm:text-4xl md:text-5xl">
             Numbers that tell our
-            <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               story.
             </span>
           </h2>
@@ -88,7 +88,7 @@ export default function StatsSection() {
             STATS
             =================================================== */}
 
-        <div className="grid overflow-hidden rounded-3xl border border-white/[0.08] bg-[#080d1d]/70 backdrop-blur-xl sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid overflow-hidden rounded-3xl border border-white/8 bg-[#080d1d]/70 backdrop-blur-xl sm:grid-cols-2 lg:grid-cols-4">
           {stats.map((stat, index) => {
             const Icon = stat.icon;
 
@@ -120,7 +120,7 @@ export default function StatsSection() {
                 {/* Icon */}
 
                 <div className="relative z-10 flex items-center justify-between">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-cyan-400/15 bg-cyan-400/[0.06] text-cyan-400 transition-all duration-300 group-hover:border-cyan-400/30 group-hover:bg-cyan-400/10">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-cyan-400/15 bg-cyan-400/6 text-cyan-400 transition-all duration-300 group-hover:border-cyan-400/30 group-hover:bg-cyan-400/10">
                     <Icon size={20} strokeWidth={1.7} />
                   </div>
 
@@ -141,7 +141,7 @@ export default function StatsSection() {
                       duration: 0.5,
                       delay: 0.15 + index * 0.1,
                     }}
-                    className="bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl"
+                    className="bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl"
                   >
                     {stat.value}
                   </motion.h3>
@@ -150,14 +150,14 @@ export default function StatsSection() {
                     {stat.label}
                   </h4>
 
-                  <p className="mt-2 max-w-[220px] text-xs leading-5 text-slate-500 sm:text-sm">
+                  <p className="mt-2 max-w-55 text-xs leading-5 text-slate-500 sm:text-sm">
                     {stat.description}
                   </p>
                 </div>
 
                 {/* Bottom Line */}
 
-                <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/40" />
+                <div className="absolute bottom-0 left-8 right-8 h-px bg-linear-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/40" />
               </motion.div>
             );
           })}

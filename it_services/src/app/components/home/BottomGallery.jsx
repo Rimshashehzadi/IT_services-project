@@ -67,7 +67,7 @@ export default function BottomGallery() {
 
           <h2 className="mt-5 text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl">
             Technology That
-            <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Drives Innovation
             </span>
           </h2>
@@ -99,8 +99,8 @@ export default function BottomGallery() {
               <div
                 className={`relative w-full overflow-hidden ${
                   index === 0
-                    ? "h-[380px] sm:h-full"
-                    : "h-[250px]"
+                    ? "h-95 sm:h-full"
+                    : "h-62.5"
                 }`}
               >
                 <div
@@ -111,7 +111,7 @@ export default function BottomGallery() {
                 />
 
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/30 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#050816] via-[#050816]/30 to-transparent" />
 
                 {/* Cyan Glow */}
                 <div className="absolute inset-0 opacity-0 transition duration-500 group-hover:bg-cyan-400/10 group-hover:opacity-100" />

@@ -98,7 +98,7 @@ function TechItem({ technology }) {
     <motion.div
       whileHover={{ y: -3 }}
       transition={{ duration: 0.2 }}
-      className="group flex items-center gap-3 rounded-xl border border-white/[0.07] bg-white/[0.02] px-3 py-3 transition-all duration-300 hover:border-cyan-400/25 hover:bg-cyan-400/[0.04]"
+      className="group flex items-center gap-3 rounded-xl border border-white/[0.07] bg-white/2 px-3 py-3 transition-all duration-300 hover:border-cyan-400/25 hover:bg-cyan-400/4"
     >
       <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/[0.07] bg-[#0b1224] text-[10px] font-bold text-cyan-400 transition-all duration-300 group-hover:border-cyan-400/25 group-hover:bg-cyan-400/10">
         {technology.short}
@@ -136,7 +136,7 @@ export default function Technologies() {
         >
           {/* Label */}
 
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-4 py-2">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/6 px-4 py-2">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)]" />
 
             <span className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-300">
@@ -148,7 +148,7 @@ export default function Technologies() {
 
           <h2 className="text-3xl font-bold leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl lg:text-6xl">
             Built with modern
-            <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               technology.
             </span>
           </h2>
@@ -178,7 +178,7 @@ export default function Technologies() {
                   delay: index * 0.08,
                 }}
                 whileHover={{ y: -5 }}
-                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#080d1d]/80 p-5 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/25 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] sm:p-6"
+                className="group relative overflow-hidden rounded-2xl border border-white/8 bg-[#080d1d]/80 p-5 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/25 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] sm:p-6"
               >
                 {/* Top Glow */}
 
@@ -189,7 +189,7 @@ export default function Technologies() {
                 <div className="relative z-10 flex items-start gap-4">
                   <motion.div
                     whileHover={{ rotate: 6, scale: 1.05 }}
-                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-cyan-400/15 bg-cyan-400/[0.06] text-cyan-400 transition-all duration-300 group-hover:border-cyan-400/30 group-hover:bg-cyan-400/10"
+                    className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-cyan-400/15 bg-cyan-400/6 text-cyan-400 transition-all duration-300 group-hover:border-cyan-400/30 group-hover:bg-cyan-400/10"
                   >
                     <Icon size={21} strokeWidth={1.7} />
                   </motion.div>
@@ -218,7 +218,7 @@ export default function Technologies() {
 
                 {/* Bottom Glow Line */}
 
-                <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/50" />
+                <div className="absolute bottom-0 left-8 right-8 h-px bg-linear-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/50" />
               </motion.article>
             );
           })}
@@ -233,7 +233,7 @@ export default function Technologies() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-12 overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.02]"
+          className="mt-12 overflow-hidden rounded-2xl border border-white/[0.07] bg-white/2"
         >
           <div className="flex flex-col items-center justify-between gap-5 px-5 py-6 sm:flex-row sm:px-7">
             <div className="text-center sm:text-left">

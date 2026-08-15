@@ -64,8 +64,8 @@ export default function Plans() {
     <section className="relative overflow-hidden bg-[#050816] px-4 py-24 text-white sm:px-6 lg:px-8">
       
       {/* Background Glow */}
-      <div className="pointer-events-none absolute left-[-150px] top-20 h-[350px] w-[350px] rounded-full bg-cyan-500/10 blur-[140px]" />
-      <div className="pointer-events-none absolute bottom-0 right-[-100px] h-[400px] w-[400px] rounded-full bg-blue-600/10 blur-[160px]" />
+      <div className="pointer-events-none absolute -left-37.5 top-20 h-87.5 w-87.5 rounded-full bg-cyan-500/10 blur-[140px]" />
+      <div className="pointer-events-none absolute bottom-0 -right-25 h-100 w-100 rounded-full bg-blue-600/10 blur-[160px]" />
 
       {/* Grid */}
       <div
@@ -94,7 +94,7 @@ export default function Plans() {
 
           <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
             Plans That Fit Your{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Business
             </span>
           </h1>
@@ -117,10 +117,10 @@ export default function Plans() {
                 duration: 0.6,
                 delay: index * 0.15,
               }}
-              className={`relative rounded-3xl border p-[1px] ${
+              className={`relative rounded-3xl border p-px ${
                 plan.popular
-                  ? "border-cyan-400/60 bg-gradient-to-b from-cyan-400/40 via-blue-500/20 to-transparent"
-                  : "border-white/10 bg-white/[0.03]"
+                  ? "border-cyan-400/60 bg-linear-to-b from-cyan-400/40 via-blue-500/20 to-transparent"
+                  : "border-white/10 bg-white/3"
               }`}
             >
               <div className="h-full rounded-[23px] bg-[#0b1120] p-7 sm:p-8">
@@ -134,7 +134,7 @@ export default function Plans() {
                 <div className="mb-7">
                   <h2 className="text-2xl font-bold">{plan.name}</h2>
 
-                  <p className="mt-3 min-h-[48px] text-sm leading-6 text-gray-400">
+                  <p className="mt-3 min-h-12 text-sm leading-6 text-gray-400">
                     {plan.description}
                   </p>
                 </div>
@@ -197,7 +197,7 @@ export default function Plans() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mt-16 rounded-3xl border border-cyan-400/10 bg-gradient-to-r from-cyan-400/5 to-blue-500/5 p-8 text-center sm:p-10"
+          className="mt-16 rounded-3xl border border-cyan-400/10 bg-linear-to-r from-cyan-400/5 to-blue-500/5 p-8 text-center sm:p-10"
         >
           <Zap className="mx-auto mb-4 text-cyan-400" size={28} />
 

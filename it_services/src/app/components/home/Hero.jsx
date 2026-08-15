@@ -34,7 +34,7 @@ export default function Hero() {
   </div>
 
   {/* Dark Theme Overlay */}
-  <div className="pointer-events-none absolute inset-0 z-[1] bg-[#050816]/45" />
+  <div className="pointer-events-none absolute inset-0 z-1 bg-[#050816]/45" />
 
   {/* Cyan Glow */}
   <motion.div
@@ -47,7 +47,7 @@ export default function Hero() {
       repeat: Infinity,
       ease: "easeInOut",
     }}
-    className="pointer-events-none absolute -left-32 -top-32 z-[2] h-80 w-80 rounded-full bg-cyan-400/20 blur-[140px]"
+    className="pointer-events-none absolute -left-32 -top-32 z-2 h-80 w-80 rounded-full bg-cyan-400/20 blur-[140px]"
   />
 
   {/* Blue Glow */}
@@ -61,7 +61,7 @@ export default function Hero() {
       repeat: Infinity,
       ease: "easeInOut",
     }}
-    className="pointer-events-none absolute -bottom-40 -right-40 z-[2] h-96 w-96 rounded-full bg-blue-500/20 blur-[150px]"
+    className="pointer-events-none absolute -bottom-40 -right-40 z-2 h-96 w-96 rounded-full bg-blue-500/20 blur-[150px]"
   />
 
     
@@ -109,7 +109,7 @@ export default function Hero() {
                 Business With
               </span>
 
-              <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Modern IT Solutions
               </span>
             </h1>
@@ -139,7 +139,7 @@ export default function Hero() {
 
               <Link
                 href="/projects"
-                className="inline-flex w-full items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/40 hover:bg-cyan-400/[0.06] sm:w-auto sm:px-7 sm:py-4 sm:text-base"
+                className="inline-flex w-full items-center justify-center gap-3 rounded-xl border border-white/10 bg-white/2 px-6 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all duration-300 hover:border-cyan-400/40 hover:bg-cyan-400/6 sm:w-auto sm:px-7 sm:py-4 sm:text-base"
               >
                 <Play
                   size={17}
@@ -251,7 +251,7 @@ export default function Hero() {
 
               {/* Dashboard Stats */}
 
-              <div className="mt-6 grid grid-cols-2 gap-4 border-t border-white/[0.06] pt-5 sm:mt-8 sm:pt-6">
+              <div className="mt-6 grid grid-cols-2 gap-4 border-t border-white/6 pt-5 sm:mt-8 sm:pt-6">
                 <div>
                   <p className="text-xs text-slate-500 sm:text-sm">
                     Revenue

@@ -36,9 +36,9 @@ export default function Contact() {
     <section className="relative min-h-screen overflow-hidden bg-[#050816] px-4 py-24 text-white sm:px-6 lg:px-8">
       
       {/* Background Glow */}
-      <div className="pointer-events-none absolute left-[-180px] top-20 h-[400px] w-[400px] rounded-full bg-cyan-500/10 blur-[150px]" />
+      <div className="pointer-events-none absolute -left-45 top-20 h-100 w-100 rounded-full bg-cyan-500/10 blur-[150px]" />
 
-      <div className="pointer-events-none absolute bottom-[-150px] right-[-100px] h-[450px] w-[450px] rounded-full bg-blue-600/10 blur-[170px]" />
+      <div className="pointer-events-none absolute -bottom-37.5 -right-25 h-112.5 w-112.5 rounded-full bg-blue-600/10 blur-[170px]" />
 
       {/* Grid */}
       <div
@@ -65,7 +65,7 @@ export default function Contact() {
 
           <h1 className="text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
             Let's Talk About Your{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
               Next Project
             </span>
           </h1>
@@ -105,7 +105,7 @@ export default function Contact() {
                 return (
                   <div
                     key={item.title}
-                    className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition duration-300 hover:border-cyan-400/30 hover:bg-cyan-400/[0.03]"
+                    className="group rounded-2xl border border-white/10 bg-white/3 p-5 transition duration-300 hover:border-cyan-400/30 hover:bg-cyan-400/3"
                   >
                     <div className="flex items-start gap-4">
                       <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10 text-cyan-400 transition group-hover:bg-cyan-400/20">
@@ -132,7 +132,7 @@ export default function Contact() {
             </div>
 
             {/* Trust */}
-            <div className="mt-7 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
+            <div className="mt-7 rounded-2xl border border-white/10 bg-white/2 p-5">
               <div className="flex items-center gap-3">
                 <CheckCircle2 className="text-cyan-400" size={20} />
 
@@ -165,7 +165,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="relative rounded-3xl border border-cyan-400/20 bg-gradient-to-br from-cyan-400/10 via-[#0b1120] to-blue-500/10 p-[1px]"
+            className="relative rounded-3xl border border-cyan-400/20 bg-linear-to-br from-cyan-400/10 via-[#0b1120] to-blue-500/10 p-px"
           >
             <div className="rounded-[23px] bg-[#090f1d] p-6 sm:p-8 lg:p-10">
 
@@ -191,7 +191,7 @@ export default function Contact() {
                     <input
                       type="text"
                       placeholder="John Doe"
-                      className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-cyan-400/50 focus:bg-cyan-400/[0.03]"
+                      className="w-full rounded-xl border border-white/10 bg-white/4 px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-cyan-400/50 focus:bg-cyan-400/3"
                     />
                   </div>
 
@@ -203,7 +203,7 @@ export default function Contact() {
                     <input
                       type="email"
                       placeholder="john@example.com"
-                      className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-cyan-400/50 focus:bg-cyan-400/[0.03]"
+                      className="w-full rounded-xl border border-white/10 bg-white/4 px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-cyan-400/50 focus:bg-cyan-400/3"
                     />
                   </div>
                 </div>
@@ -217,7 +217,7 @@ export default function Contact() {
                   <input
                     type="text"
                     placeholder="Your company name"
-                    className="w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-cyan-400/50 focus:bg-cyan-400/[0.03]"
+                    className="w-full rounded-xl border border-white/10 bg-white/4 px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-cyan-400/50 focus:bg-cyan-400/3"
                   />
                 </div>
 
@@ -265,7 +265,7 @@ export default function Contact() {
                   <textarea
                     rows="5"
                     placeholder="Tell us about your project..."
-                    className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.04] px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-cyan-400/50 focus:bg-cyan-400/[0.03]"
+                    className="w-full resize-none rounded-xl border border-white/10 bg-white/4 px-4 py-3.5 text-sm text-white outline-none transition placeholder:text-gray-600 focus:border-cyan-400/50 focus:bg-cyan-400/3"
                   />
                 </div>
 

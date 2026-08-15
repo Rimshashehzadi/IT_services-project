@@ -40,9 +40,9 @@ export default function Testimonials() {
     <section className="relative overflow-hidden bg-[#050816] px-4 py-20 text-white sm:px-6 sm:py-24 lg:px-8 lg:py-32">
       {/* Background Glows */}
 
-      <div className="pointer-events-none absolute left-1/4 top-0 h-80 w-80 rounded-full bg-cyan-500/[0.05] blur-[150px]" />
+      <div className="pointer-events-none absolute left-1/4 top-0 h-80 w-80 rounded-full bg-cyan-500/5 blur-[150px]" />
 
-      <div className="pointer-events-none absolute bottom-0 right-1/4 h-80 w-80 rounded-full bg-blue-500/[0.05] blur-[150px]" />
+      <div className="pointer-events-none absolute bottom-0 right-1/4 h-80 w-80 rounded-full bg-blue-500/5 blur-[150px]" />
 
       <div className="relative mx-auto max-w-7xl">
 
@@ -55,7 +55,7 @@ export default function Testimonials() {
           transition={{ duration: 0.7 }}
           className="mx-auto mb-14 max-w-3xl text-center sm:mb-16 lg:mb-20"
         >
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-4 py-2">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/6 px-4 py-2">
             <MessageSquareQuote
               size={14}
               className="text-cyan-400"
@@ -68,7 +68,7 @@ export default function Testimonials() {
 
           <h2 className="text-3xl font-bold leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl lg:text-6xl">
             Trusted by teams
-            <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               building what's next.
             </span>
           </h2>
@@ -90,7 +90,7 @@ export default function Testimonials() {
         >
           {/* Glow */}
 
-          <div className="pointer-events-none absolute -right-32 -top-32 h-72 w-72 rounded-full bg-cyan-400/[0.05] blur-[100px]" />
+          <div className="pointer-events-none absolute -right-32 -top-32 h-72 w-72 rounded-full bg-cyan-400/5 blur-[100px]" />
 
           <div className="relative z-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
 
@@ -113,13 +113,13 @@ export default function Testimonials() {
                 className="mb-5 text-cyan-400/30"
               />
 
-              <blockquote className="max-w-4xl text-xl font-medium leading-9 text-slate-200 sm:text-2xl sm:leading-10 lg:text-3xl lg:leading-[1.5]"
+              <blockquote className="max-w-4xl text-xl font-medium leading-9 text-slate-200 sm:text-2xl sm:leading-10 lg:text-3xl lg:leading-normal"
               >
                 "{testimonials[0].quote}"
               </blockquote>
 
               <div className="mt-8 flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-cyan-400/20 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 text-sm font-bold text-cyan-300">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full border border-cyan-400/20 bg-linear-to-br from-cyan-400/20 to-blue-500/20 text-sm font-bold text-cyan-300">
                   {testimonials[0].initials}
                 </div>
 
@@ -137,7 +137,7 @@ export default function Testimonials() {
 
             {/* Quote Icon */}
 
-            <div className="hidden h-24 w-24 items-center justify-center rounded-2xl border border-white/[0.06] bg-white/[0.02] lg:flex">
+            <div className="hidden h-24 w-24 items-center justify-center rounded-2xl border border-white/6 bg-white/2 lg:flex">
               <Quote
                 size={42}
                 className="text-cyan-400/50"
@@ -147,7 +147,7 @@ export default function Testimonials() {
 
           {/* Bottom glow */}
 
-          <div className="absolute bottom-0 left-20 right-20 h-px bg-gradient-to-r from-transparent via-cyan-400/40 to-transparent" />
+          <div className="absolute bottom-0 left-20 right-20 h-px bg-linear-to-r from-transparent via-cyan-400/40 to-transparent" />
         </motion.div>
 
         {/* Smaller testimonials */}
@@ -164,7 +164,7 @@ export default function Testimonials() {
                 delay: index * 0.1,
               }}
               whileHover={{ y: -5 }}
-              className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#080d1d]/80 p-6 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/25 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] sm:p-7"
+              className="group relative overflow-hidden rounded-2xl border border-white/8 bg-[#080d1d]/80 p-6 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/25 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] sm:p-7"
             >
               {/* Top */}
 
@@ -199,8 +199,8 @@ export default function Testimonials() {
 
               {/* User */}
 
-              <div className="mt-7 flex items-center gap-3 border-t border-white/[0.06] pt-5">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-cyan-400/15 bg-cyan-400/[0.06] text-xs font-bold text-cyan-300">
+              <div className="mt-7 flex items-center gap-3 border-t border-white/6 pt-5">
+                <div className="flex h-10 w-10 items-center justify-center rounded-full border border-cyan-400/15 bg-cyan-400/6 text-xs font-bold text-cyan-300">
                   {testimonial.initials}
                 </div>
 
@@ -217,7 +217,7 @@ export default function Testimonials() {
 
               {/* Bottom Glow */}
 
-              <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/50" />
+              <div className="absolute bottom-0 left-8 right-8 h-px bg-linear-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/50" />
             </motion.article>
           ))}
         </div>

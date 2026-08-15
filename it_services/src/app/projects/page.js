@@ -84,9 +84,9 @@ export default function Projects() {
           BACKGROUND GLOW
           ===================================================== */}
 
-      <div className="pointer-events-none absolute left-0 top-20 h-72 w-72 rounded-full bg-cyan-500/[0.06] blur-[140px]" />
+      <div className="pointer-events-none absolute left-0 top-20 h-72 w-72 rounded-full bg-cyan-500/6 blur-[140px]" />
 
-      <div className="pointer-events-none absolute bottom-10 right-0 h-80 w-80 rounded-full bg-blue-500/[0.06] blur-[150px]" />
+      <div className="pointer-events-none absolute bottom-10 right-0 h-80 w-80 rounded-full bg-blue-500/6 blur-[150px]" />
 
       {/* =====================================================
           CONTAINER
@@ -106,7 +106,7 @@ export default function Projects() {
         >
           {/* Label */}
 
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-4 py-2">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/6 px-4 py-2">
             <Sparkles
               size={14}
               className="text-cyan-400"
@@ -121,7 +121,7 @@ export default function Projects() {
 
           <h2 className="text-3xl font-bold leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl lg:text-6xl">
             Projects built to make
-            <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               an impact.
             </span>
           </h2>
@@ -155,7 +155,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="mt-12 flex flex-col items-center justify-between gap-5 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 sm:flex-row sm:p-7"
+          className="mt-12 flex flex-col items-center justify-between gap-5 rounded-2xl border border-white/[0.07] bg-white/2 p-6 sm:flex-row sm:p-7"
         >
           <div className="text-center sm:text-left">
             <p className="text-base font-medium text-white sm:text-lg">
@@ -169,7 +169,7 @@ export default function Projects() {
 
           <a
             href="/projects"
-            className="group inline-flex w-full items-center justify-center gap-2 rounded-xl border border-cyan-400/20 bg-cyan-400/[0.06] px-6 py-3.5 text-sm font-semibold text-cyan-300 transition-all duration-300 hover:border-cyan-400/40 hover:bg-cyan-400/10 hover:text-cyan-200 sm:w-auto"
+            className="group inline-flex w-full items-center justify-center gap-2 rounded-xl border border-cyan-400/20 bg-cyan-400/6 px-6 py-3.5 text-sm font-semibold text-cyan-300 transition-all duration-300 hover:border-cyan-400/40 hover:bg-cyan-400/10 hover:text-cyan-200 sm:w-auto"
           >
             View All Projects
 
@@ -201,13 +201,13 @@ function ProjectCard({ project, index }) {
       whileHover={{
         y: -7,
       }}
-      className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#080d1d]/80 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/25 hover:shadow-[0_20px_70px_rgba(0,0,0,0.35)]"
+      className="group relative overflow-hidden rounded-2xl border border-white/8 bg-[#080d1d]/80 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/25 hover:shadow-[0_20px_70px_rgba(0,0,0,0.35)]"
     >
       {/* ===================================================
           IMAGE
           =================================================== */}
 
-      <div className="relative aspect-[16/10] overflow-hidden bg-[#0b1224]">
+      <div className="relative aspect-16/10 overflow-hidden bg-[#0b1224]">
         <motion.img
           src={project.image}
           alt={project.title}
@@ -223,11 +223,11 @@ function ProjectCard({ project, index }) {
 
         {/* Dark Overlay */}
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#050816] via-[#050816]/20 to-transparent opacity-90" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#050816] via-[#050816]/20 to-transparent opacity-90" />
 
         {/* Hover Cyan Glow */}
 
-        <div className="absolute inset-0 bg-cyan-400/0 transition-all duration-500 group-hover:bg-cyan-400/[0.04]" />
+        <div className="absolute inset-0 bg-cyan-400/0 transition-all duration-500 group-hover:bg-cyan-400/4" />
 
         {/* Category */}
 
@@ -292,7 +292,7 @@ function ProjectCard({ project, index }) {
           {project.technologies.map((technology) => (
             <span
               key={technology}
-              className="rounded-full border border-white/[0.07] bg-white/[0.025] px-2.5 py-1 text-[10px] font-medium text-slate-500 transition-colors duration-300 group-hover:border-cyan-400/10 group-hover:text-slate-400 sm:text-xs"
+              className="rounded-full border border-white/[0.07] bg-white/2.5 px-2.5 py-1 text-[10px] font-medium text-slate-500 transition-colors duration-300 group-hover:border-cyan-400/10 group-hover:text-slate-400 sm:text-xs"
             >
               {technology}
             </span>
@@ -301,7 +301,7 @@ function ProjectCard({ project, index }) {
 
         {/* Links */}
 
-        <div className="mt-6 flex items-center gap-3 border-t border-white/[0.06] pt-5">
+        <div className="mt-6 flex items-center gap-3 border-t border-white/6 pt-5">
           <a
             href={project.live}
             className="group/link inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 transition-colors hover:text-cyan-300 sm:text-sm"
@@ -333,7 +333,7 @@ function ProjectCard({ project, index }) {
           BOTTOM GLOW LINE
           =================================================== */}
 
-      <div className="absolute bottom-0 left-10 right-10 h-px bg-gradient-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/50" />
+      <div className="absolute bottom-0 left-10 right-10 h-px bg-linear-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/50" />
     </motion.article>
   );
 }

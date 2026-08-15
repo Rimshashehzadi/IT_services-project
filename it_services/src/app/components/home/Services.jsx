@@ -74,7 +74,7 @@ function GlowBorder() {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="absolute -top-px h-px w-1/2 bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-70"
+        className="absolute -top-px h-px w-1/2 bg-linear-to-r from-transparent via-cyan-400 to-transparent opacity-70"
       />
 
       <motion.div
@@ -87,7 +87,7 @@ function GlowBorder() {
           ease: "linear",
           delay: 1.1,
         }}
-        className="absolute -right-px h-1/2 w-px bg-gradient-to-b from-transparent via-cyan-400 to-transparent opacity-60"
+        className="absolute -right-px h-1/2 w-px bg-linear-to-b from-transparent via-cyan-400 to-transparent opacity-60"
       />
 
       <motion.div
@@ -100,7 +100,7 @@ function GlowBorder() {
           ease: "linear",
           delay: 2.2,
         }}
-        className="absolute -bottom-px right-0 h-px w-1/2 bg-gradient-to-l from-transparent via-blue-500 to-transparent opacity-60"
+        className="absolute -bottom-px right-0 h-px w-1/2 bg-linear-to-l from-transparent via-blue-500 to-transparent opacity-60"
       />
 
       <motion.div
@@ -113,7 +113,7 @@ function GlowBorder() {
           ease: "linear",
           delay: 3.3,
         }}
-        className="absolute -left-px bottom-0 h-1/2 w-px bg-gradient-to-t from-transparent via-blue-500 to-transparent opacity-60"
+        className="absolute -left-px bottom-0 h-1/2 w-px bg-linear-to-t from-transparent via-blue-500 to-transparent opacity-60"
       />
     </div>
   );
@@ -148,7 +148,7 @@ export default function Services() {
         >
           {/* Label */}
 
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-4 py-2">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/6 px-4 py-2">
             <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)]" />
 
             <span className="text-xs font-medium uppercase tracking-[0.2em] text-cyan-300">
@@ -160,7 +160,7 @@ export default function Services() {
 
           <h2 className="text-3xl font-bold leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl lg:text-6xl">
             Technology that moves
-            <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               your business forward.
             </span>
           </h2>
@@ -195,7 +195,7 @@ export default function Services() {
                 whileHover={{
                   y: -7,
                 }}
-                className="group relative min-h-[340px] overflow-hidden rounded-2xl border border-white/[0.08] bg-[#080d1d]/80 p-6 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/30 hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)] sm:p-7 lg:min-h-[360px]"
+                className="group relative min-h-85 overflow-hidden rounded-2xl border border-white/8 bg-[#080d1d]/80 p-6 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/30 hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)] sm:p-7 lg:min-h-90"
               >
                 {/* Animated React-Bits-style border */}
 
@@ -215,7 +215,7 @@ export default function Services() {
                   <motion.div
                     whileHover={{ rotate: 8, scale: 1.08 }}
                     transition={{ duration: 0.25 }}
-                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-cyan-400/15 bg-cyan-400/[0.06] text-cyan-400 transition-colors duration-300 group-hover:border-cyan-400/30 group-hover:bg-cyan-400/10"
+                    className="flex h-11 w-11 items-center justify-center rounded-xl border border-cyan-400/15 bg-cyan-400/6 text-cyan-400 transition-colors duration-300 group-hover:border-cyan-400/30 group-hover:bg-cyan-400/10"
                   >
                     <Icon size={21} strokeWidth={1.7} />
                   </motion.div>
@@ -239,7 +239,7 @@ export default function Services() {
                   {service.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-white/[0.07] bg-white/[0.025] px-3 py-1.5 text-[10px] font-medium text-slate-500 transition-colors duration-300 group-hover:border-cyan-400/10 group-hover:text-slate-400 sm:text-xs"
+                      className="rounded-full border border-white/[0.07] bg-white/2.5 px-3 py-1.5 text-[10px] font-medium text-slate-500 transition-colors duration-300 group-hover:border-cyan-400/10 group-hover:text-slate-400 sm:text-xs"
                     >
                       {tag}
                     </span>
@@ -265,7 +265,7 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="mt-12 flex flex-col items-center justify-between gap-5 rounded-2xl border border-white/[0.07] bg-white/[0.02] p-6 sm:flex-row sm:p-7"
+          className="mt-12 flex flex-col items-center justify-between gap-5 rounded-2xl border border-white/[0.07] bg-white/2 p-6 sm:flex-row sm:p-7"
         >
           <div>
             <p className="text-base font-medium text-white sm:text-lg">

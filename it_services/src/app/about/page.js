@@ -92,9 +92,9 @@ export default function AboutPage() {
       ========================================================= */}
       <section className="relative px-6 pb-24 pt-32 sm:px-10 lg:px-20">
         {/* Background Glow */}
-        <div className="pointer-events-none absolute left-1/2 top-0 h-[450px] w-[450px] -translate-x-1/2 rounded-full bg-indigo-600/20 blur-[140px]" />
+        <div className="pointer-events-none absolute left-1/2 top-0 h-112.5 w-112.5 -translate-x-1/2 rounded-full bg-indigo-600/20 blur-[140px]" />
 
-        <div className="pointer-events-none absolute right-0 top-32 h-[300px] w-[300px] rounded-full bg-cyan-500/10 blur-[130px]" />
+        <div className="pointer-events-none absolute right-0 top-32 h-75 w-75 rounded-full bg-cyan-500/10 blur-[130px]" />
 
         <div className="relative mx-auto max-w-7xl">
           {/* Breadcrumb */}
@@ -137,7 +137,7 @@ export default function AboutPage() {
               className="text-4xl font-bold leading-tight tracking-tight sm:text-5xl md:text-6xl lg:text-7xl"
             >
               Building Digital
-              <span className="block bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="block bg-linear-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
                 Solutions That Matter.
               </span>
             </motion.h1>
@@ -176,7 +176,7 @@ export default function AboutPage() {
 
               <Link
                 href="/services"
-                className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] px-6 py-3.5 font-medium text-slate-200 transition duration-300 hover:border-white/20 hover:bg-white/[0.06]"
+                className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/3 px-6 py-3.5 font-medium text-slate-200 transition duration-300 hover:border-white/20 hover:bg-white/6"
               >
                 Explore Services
               </Link>
@@ -188,7 +188,7 @@ export default function AboutPage() {
       {/* =========================================================
           STATS
       ========================================================= */}
-      <section className="border-y border-white/[0.06] bg-white/[0.015] px-6 py-12 sm:px-10 lg:px-20">
+      <section className="border-y border-white/6 bg-white/1.5 px-6 py-12 sm:px-10 lg:px-20">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 md:grid-cols-4">
           {stats.map((stat, index) => (
             <motion.div
@@ -227,8 +227,8 @@ export default function AboutPage() {
           >
             <div className="absolute -left-10 top-10 h-40 w-40 rounded-full bg-indigo-600/20 blur-[100px]" />
 
-            <div className="relative rounded-3xl border border-white/[0.08] bg-gradient-to-br from-indigo-500/10 via-white/[0.03] to-cyan-500/10 p-5 sm:p-8">
-              <div className="rounded-2xl border border-white/[0.08] bg-[#080d1d] p-5 sm:p-7">
+            <div className="relative rounded-3xl border border-white/8 bg-linear-to-br from-indigo-500/10 via-white/3 to-cyan-500/10 p-5 sm:p-8">
+              <div className="rounded-2xl border border-white/8 bg-[#080d1d] p-5 sm:p-7">
                 {/* Terminal Header */}
                 <div className="mb-8 flex items-center gap-2">
                   <span className="h-3 w-3 rounded-full bg-red-400/70" />
@@ -403,7 +403,7 @@ export default function AboutPage() {
                   whileHover={{
                     y: -7,
                   }}
-                  className="group rounded-2xl border border-white/[0.07] bg-white/[0.025] p-6 transition duration-300 hover:border-indigo-500/30 hover:bg-indigo-500/[0.04]"
+                  className="group rounded-2xl border border-white/[0.07] bg-white/2.5 p-6 transition duration-300 hover:border-indigo-500/30 hover:bg-indigo-500/4"
                 >
                   <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-indigo-500/20 bg-indigo-500/10 text-indigo-400 transition duration-300 group-hover:bg-indigo-500/20">
                     <Icon size={23} />
@@ -446,7 +446,7 @@ export default function AboutPage() {
             transition={{
               duration: 0.6,
             }}
-            className="rounded-3xl border border-indigo-500/20 bg-gradient-to-br from-indigo-500/10 to-transparent p-8 sm:p-10"
+            className="rounded-3xl border border-indigo-500/20 bg-linear-to-br from-indigo-500/10 to-transparent p-8 sm:p-10"
           >
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500/15 text-indigo-400">
               <Rocket size={24} />
@@ -480,7 +480,7 @@ export default function AboutPage() {
             transition={{
               duration: 0.6,
             }}
-            className="rounded-3xl border border-cyan-500/20 bg-gradient-to-br from-cyan-500/10 to-transparent p-8 sm:p-10"
+            className="rounded-3xl border border-cyan-500/20 bg-linear-to-br from-cyan-500/10 to-transparent p-8 sm:p-10"
           >
             <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-400">
               <Globe size={24} />
@@ -558,7 +558,7 @@ export default function AboutPage() {
                     duration: 0.4,
                     delay: index * 0.05,
                   }}
-                  className="flex items-center gap-3 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4"
+                  className="flex items-center gap-3 rounded-xl border border-white/6 bg-white/2 p-4"
                 >
                   <CheckCircle2
                     size={18}
@@ -593,7 +593,7 @@ export default function AboutPage() {
           >
             <div className="absolute inset-0 rounded-3xl bg-indigo-600/10 blur-3xl" />
 
-            <div className="relative rounded-3xl border border-white/[0.08] bg-[#090e1e] p-8 sm:p-10">
+            <div className="relative rounded-3xl border border-white/8 bg-[#090e1e] p-8 sm:p-10">
               <div className="mb-8 flex items-center justify-between">
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/10 text-indigo-400">
                   <ShieldCheck size={28} />
@@ -616,7 +616,7 @@ export default function AboutPage() {
 
               <div className="mt-8 space-y-4">
                 {/* Infrastructure */}
-                <div className="flex items-center gap-4 rounded-xl border border-white/[0.06] p-4">
+                <div className="flex items-center gap-4 rounded-xl border border-white/6 p-4">
                   <Cloud
                     size={20}
                     className="text-cyan-400"
@@ -634,7 +634,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Security */}
-                <div className="flex items-center gap-4 rounded-xl border border-white/[0.06] p-4">
+                <div className="flex items-center gap-4 rounded-xl border border-white/6 p-4">
                   <ShieldCheck
                     size={20}
                     className="text-indigo-400"
@@ -652,7 +652,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Partnership */}
-                <div className="flex items-center gap-4 rounded-xl border border-white/[0.06] p-4">
+                <div className="flex items-center gap-4 rounded-xl border border-white/6 p-4">
                   <Users
                     size={20}
                     className="text-purple-400"
@@ -670,7 +670,7 @@ export default function AboutPage() {
                 </div>
 
                 {/* Data */}
-                <div className="flex items-center gap-4 rounded-xl border border-white/[0.06] p-4">
+                <div className="flex items-center gap-4 rounded-xl border border-white/6 p-4">
                   <Database
                     size={20}
                     className="text-emerald-400"
@@ -695,7 +695,7 @@ export default function AboutPage() {
       {/* =========================================================
           TECHNOLOGIES
       ========================================================= */}
-      <section className="border-y border-white/[0.06] bg-white/[0.015] px-6 py-20 sm:px-10 lg:px-20">
+      <section className="border-y border-white/6 bg-white/1.5 px-6 py-20 sm:px-10 lg:px-20">
         <div className="mx-auto max-w-7xl">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-indigo-400">
@@ -735,7 +735,7 @@ export default function AboutPage() {
                 whileHover={{
                   y: -3,
                 }}
-                className="rounded-xl border border-white/[0.08] bg-[#090e1e] px-5 py-3 text-sm font-medium text-slate-300 transition duration-300 hover:border-indigo-500/30 hover:text-white"
+                className="rounded-xl border border-white/8 bg-[#090e1e] px-5 py-3 text-sm font-medium text-slate-300 transition duration-300 hover:border-indigo-500/30 hover:text-white"
               >
                 {technology}
               </motion.div>
@@ -748,7 +748,7 @@ export default function AboutPage() {
           CTA
       ========================================================= */}
       <section className="relative px-6 py-28 sm:px-10 lg:px-20">
-        <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-600/10 blur-[120px]" />
+        <div className="pointer-events-none absolute left-1/2 top-1/2 h-75 w-125 -translate-x-1/2 -translate-y-1/2 rounded-full bg-indigo-600/10 blur-[120px]" />
 
         <motion.div
           initial={{
@@ -765,7 +765,7 @@ export default function AboutPage() {
           transition={{
             duration: 0.7,
           }}
-          className="relative mx-auto max-w-4xl rounded-3xl border border-indigo-500/20 bg-gradient-to-br from-indigo-500/10 via-white/[0.02] to-cyan-500/10 px-6 py-14 text-center sm:px-10"
+          className="relative mx-auto max-w-4xl rounded-3xl border border-indigo-500/20 bg-linear-to-br from-indigo-500/10 via-white/2 to-cyan-500/10 px-6 py-14 text-center sm:px-10"
         >
           {/* Icon */}
           <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/10 text-indigo-400">

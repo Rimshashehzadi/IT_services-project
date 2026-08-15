@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Img from "next/image";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -23,8 +24,9 @@ export default function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
         
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-white">
-          <span className="text-cyan-400">IT</span>Services
+        <Link href="/" className="">
+          {/* <span className="text-cyan-400">IT</span>Services */}
+          <Img src="/logo2.png" alt="Logo" width={180} height={180} className="mr-2 inline-block" />
         </Link>
 
         {/* Desktop Menu */}
@@ -42,7 +44,7 @@ export default function Navbar() {
               {item.name}
 
               {pathname === item.href && (
-                <span className="absolute -bottom-2 left-0 h-[2px] w-full bg-cyan-400 rounded-full" />
+                <span className="absolute -bottom-2 left-0 h-0.5 w-full bg-cyan-400 rounded-full" />
               )}
             </Link>
           ))}
@@ -84,7 +86,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`overflow-hidden border-t border-white/10 bg-[#111827] transition-all duration-300 lg:hidden ${
-          menuOpen ? "max-h-[500px]" : "max-h-0"
+          menuOpen ? "max-h-125" : "max-h-0"
         }`}
       >
         <div className="flex flex-col px-5 py-5">

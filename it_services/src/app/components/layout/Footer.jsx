@@ -1,4 +1,5 @@
 "use client";
+import Img from "next/image";
 
 import Link from "next/link";
 import {
@@ -75,7 +76,7 @@ export default function Footer() {
 
                 Ready to transform your
 
-                <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
                   digital future?
                 </span>
 
@@ -116,13 +117,12 @@ export default function Footer() {
 
           <div className="lg:col-span-2">
 
-            <Link
-              href="/"
-              className="inline-flex items-center text-2xl font-bold tracking-tight"
-            >
-              <span className="text-cyan-400">IT</span>
-              <span>Services</span>
-            </Link>
+            {/* Logo */}
+        <Link href="/" className="">
+          {/* <span className="text-cyan-400">IT</span>Services */}
+          <Img src="/logo2.png" alt="Logo" width={180} height={180} className="mr-2 inline-block" />
+        </Link>
+
 
             <p className="mt-5 max-w-sm text-sm leading-7 text-gray-400">
               We build modern digital products, AI-powered systems, cloud

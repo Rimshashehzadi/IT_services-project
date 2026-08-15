@@ -60,9 +60,9 @@ export default function WhyChooseUs() {
     <section className="relative overflow-hidden bg-[#050816] px-4 py-20 text-white sm:px-6 sm:py-24 lg:px-8 lg:py-32">
       {/* Background Glow */}
 
-      <div className="pointer-events-none absolute -left-32 top-1/4 h-80 w-80 rounded-full bg-cyan-500/[0.06] blur-[140px]" />
+      <div className="pointer-events-none absolute -left-32 top-1/4 h-80 w-80 rounded-full bg-cyan-500/6 blur-[140px]" />
 
-      <div className="pointer-events-none absolute -right-32 bottom-1/4 h-80 w-80 rounded-full bg-blue-500/[0.06] blur-[140px]" />
+      <div className="pointer-events-none absolute -right-32 bottom-1/4 h-80 w-80 rounded-full bg-blue-500/6 blur-[140px]" />
 
       <div className="relative mx-auto max-w-7xl">
 
@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.7 }}
           className="mx-auto mb-14 max-w-3xl text-center sm:mb-16 lg:mb-20"
         >
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/[0.06] px-4 py-2">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/6 px-4 py-2">
             <Sparkles
               size={14}
               className="text-cyan-400"
@@ -88,7 +88,7 @@ export default function WhyChooseUs() {
 
           <h2 className="text-3xl font-bold leading-tight tracking-[-0.03em] sm:text-4xl md:text-5xl lg:text-6xl">
             Technology built around
-            <span className="block bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+            <span className="block bg-linear-to-r from-cyan-300 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
               your success.
             </span>
           </h2>
@@ -117,7 +117,7 @@ export default function WhyChooseUs() {
                   delay: index * 0.08,
                 }}
                 whileHover={{ y: -6 }}
-                className="group relative overflow-hidden rounded-2xl border border-white/[0.08] bg-[#080d1d]/80 p-6 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/25 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] sm:p-7"
+                className="group relative overflow-hidden rounded-2xl border border-white/8 bg-[#080d1d]/80 p-6 backdrop-blur-xl transition-all duration-500 hover:border-cyan-400/25 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3)] sm:p-7"
               >
                 {/* Hover Glow */}
 
@@ -126,7 +126,7 @@ export default function WhyChooseUs() {
                 {/* Top */}
 
                 <div className="relative z-10 flex items-start justify-between">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-cyan-400/15 bg-cyan-400/[0.06] text-cyan-400 transition-all duration-300 group-hover:border-cyan-400/30 group-hover:bg-cyan-400/10">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-cyan-400/15 bg-cyan-400/6 text-cyan-400 transition-all duration-300 group-hover:border-cyan-400/30 group-hover:bg-cyan-400/10">
                     <Icon size={20} strokeWidth={1.7} />
                   </div>
 
@@ -149,7 +149,7 @@ export default function WhyChooseUs() {
 
                 {/* Bottom line */}
 
-                <div className="absolute bottom-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/50" />
+                <div className="absolute bottom-0 left-8 right-8 h-px bg-linear-to-r from-transparent via-cyan-400/0 to-transparent transition-all duration-500 group-hover:via-cyan-400/50" />
               </motion.article>
             );
           })}
