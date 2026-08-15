@@ -14,7 +14,7 @@ const projects = [
     category: "Healthcare Platform",
     description:
       "A modern healthcare platform that connects patients with doctors and provides a smooth digital healthcare experience.",
-    image: "/images/projects/doccure.webp",
+    image: "/images/projects/doccure.avif",
     technologies: ["React", "Vite", "Tailwind CSS", "Framer Motion"],
     live: "#",
     github: "#",
@@ -25,7 +25,7 @@ const projects = [
     category: "MERN Stack",
     description:
       "A full-stack task management application with authentication, MongoDB, AI chatbot integration and automated workflows.",
-    image: "/images/projects/todo.webp",
+    image: "/images/projects/todo.avif",
     technologies: ["React", "Node.js", "MongoDB", "n8n"],
     live: "#",
     github: "#",
@@ -36,7 +36,7 @@ const projects = [
     category: "Next.js",
     description:
       "A modern e-commerce frontend focused on high performance, responsive design and a premium shopping experience.",
-    image: "/images/projects/ecommerce-next.webp",
+    image: "/images/projects/ecomerce.avif",
     technologies: ["Next.js", "JavaScript", "Tailwind CSS", "Framer Motion"],
     live: "#",
     github: "#",
@@ -47,7 +47,7 @@ const projects = [
     category: "Business Website",
     description:
       "A responsive roofing business website with service information, project showcase and an AI-powered customer chatbot.",
-    image: "/images/projects/roofing.webp",
+    image: "/images/projects/roofing.avif",
     technologies: ["React", "Tailwind CSS", "Framer Motion", "n8n"],
     live: "#",
     github: "#",
@@ -58,7 +58,7 @@ const projects = [
     category: "Business Website",
     description:
       "A responsive plumbing service website designed to present services, projects and contact information clearly.",
-    image: "/images/projects/plumbing.webp",
+    image: "/images/projects/plumbing.avif",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
     live: "#",
     github: "#",
@@ -69,7 +69,7 @@ const projects = [
     category: "E-Commerce",
     description:
       "A responsive fashion outlet website with category-based shopping experiences and a modern premium interface.",
-    image: "/images/projects/fashion.webp",
+    image: "/images/projects/fashion.avif",
     technologies: ["HTML", "CSS", "JavaScript", "Responsive UI"],
     live: "#",
     github: "#",
@@ -316,16 +316,16 @@ function ProjectCard({ project, index }) {
 
           <span className="h-4 w-px bg-white/10" />
 
-         <a
-  href={project.github}
-  className="group/link inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 transition-colors hover:text-cyan-300 sm:text-sm"
->
-  GitHub
+          <a
+            href={project.github}
+            className="group/link inline-flex items-center gap-1.5 text-xs font-medium text-slate-400 transition-colors hover:text-cyan-300 sm:text-sm"
+          >
+            GitHub
 
-  <span className="text-[10px] font-bold transition-transform group-hover/link:scale-110">
-    GH
-  </span>
-</a>
+            <span className="text-[10px] font-bold transition-transform group-hover/link:scale-110">
+              GH
+            </span>
+          </a>
         </div>
       </div>
 
